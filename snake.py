@@ -11,15 +11,15 @@ class SNAKE():
         self.snake_head = [self.snake_x, self.snake_y]
         self.snake_tail = [self.snake_x - self.snake_size * 2, self.snake_y]
 
-        self.snake_body_hor = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/snake_body_hor.png").convert_alpha()
-        self.snake_body_ver = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/snake_body_ver.png").convert_alpha()
+        self.snake_body_hor = pygame.image.load("Enter your path here/res/textures/snake_body_hor.png").convert_alpha()
+        self.snake_body_ver = pygame.image.load("Enter your path here/res/textures/snake_body_ver.png").convert_alpha()
         self.snake_body_hor = pygame.transform.scale(self.snake_body_hor, (19,19))
         self.snake_body_ver = pygame.transform.scale(self.snake_body_ver, (19,19))
 
-        self.snake_head_up = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/snake_head_up.png").convert_alpha()
-        self.snake_head_down = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/snake_head_down.png").convert_alpha()
-        self.snake_head_left = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/snake_head_left.png").convert_alpha()
-        self.snake_head_right = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/snake_head_right.png").convert_alpha()
+        self.snake_head_up = pygame.image.load("Enter your path here/res/textures/snake_head_up.png").convert_alpha()
+        self.snake_head_down = pygame.image.load("Enter your path here/res/textures/snake_head_down.png").convert_alpha()
+        self.snake_head_left = pygame.image.load("Enter your path here/res/textures/snake_head_left.png").convert_alpha()
+        self.snake_head_right = pygame.image.load("Enter your path here/res/textures/snake_head_right.png").convert_alpha()
         self.snake_head_up = pygame.transform.scale(self.snake_head_up, (self.snake_size,self.snake_size))
         self.snake_head_down = pygame.transform.scale(self.snake_head_down, (self.snake_size,self.snake_size))
         self.snake_head_left = pygame.transform.scale(self.snake_head_left, (self.snake_size,self.snake_size))
@@ -84,7 +84,7 @@ class FRUIT:
         self.fruit_pos = [random.randrange(1, (width//fruit_size)) * fruit_size,
                           random.randrange(1, (height//fruit_size)) * fruit_size]
         self.fruit_spawn = True
-        self.fruit_image = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/apple.png").convert_alpha()
+        self.fruit_image = pygame.image.load("Enter your path here/res/textures/apple.png").convert_alpha()
         self.fruit_image = pygame.transform.scale(self.fruit_image, (fruit_size, fruit_size))
 
     def spawn_fruit(self):
@@ -187,7 +187,7 @@ def pause():
 
 def background_render():
     global width, height
-    background = pygame.image.load("/home/aadigodzilla/Documents/Projects/Python Projects/snake game/res/textures/backgrund.png").convert_alpha()
+    background = pygame.image.load("Enter your path here/res/textures/backgrund.png").convert_alpha()
     background = pygame.transform.scale(background, (width, height))
     screen.blit(background, (0,0))
 
